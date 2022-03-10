@@ -1,4 +1,4 @@
-FROM eeacms/plone:5.2.7-2
+FROM eeacms/plone:5.2.7-4
 
 
 COPY site.cfg /plone/instance/
