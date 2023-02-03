@@ -8,6 +8,32 @@ pipeline {
 
   agent any
 
+  stage('Build & Push ( on tag )') {
+    when {
+      buildingTag()
+    }
+    steps{
+      node(label: 'docker-host') {
+        script {
+          checkout scm
+          if (env.BRANCH_NAME == 'master') {
+            tagName = 'latest'
+          } else {
+            tagName = "$BRANCH_NAME"
+          }
+          try {
+            dockerImage = docker.build("$registry:$tagName", "--no-cache .")
+            docker.withRegistry( '', 'eeajenkins' ) {
+              dockerImage.push()
+            }
+          } finally {
+            sh "docker rmi $registry:$tagName"
+          }
+        }
+      }
+    }
+  }
+
   stages {
     stage('Release') {
       when {
@@ -17,11 +43,11 @@ pipeline {
         node(label: 'docker') {
           script {
             withCredentials([string(credentialsId: 'eea-jenkins-token', variable: 'GITHUB_TOKEN')]) {
-            
+
              //remove starting v from version if it exists
              def version = "${BRANCH_NAME}" - ~/^v/
              sh """docker pull eeacms/gitflow; docker run -i --rm --name="${BUILD_TAG}-release" -e GIT_TOKEN="${GITHUB_TOKEN}" -e RANCHER_CATALOG_PATH="${template}" -e DOCKER_IMAGEVERSION="${BRANCH_NAME}" -e RANCHER_CATALOG_VERSION="${version}" -e DOCKER_IMAGENAME="${registry}" --entrypoint /add_rancher_catalog_entry.sh eeacms/gitflow"""
-         
+
             }
           }
         }
