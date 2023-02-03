@@ -8,33 +8,35 @@ pipeline {
 
   agent any
 
-  stage('Build & Push ( on tag )') {
-    when {
-      buildingTag()
-    }
-    steps{
-      node(label: 'docker-host') {
-        script {
-          checkout scm
-          if (env.BRANCH_NAME == 'master') {
-            tagName = 'latest'
-          } else {
-            tagName = "$BRANCH_NAME"
-          }
-          try {
-            dockerImage = docker.build("$registry:$tagName", "--no-cache .")
-            docker.withRegistry( '', 'eeajenkins' ) {
-              dockerImage.push()
+
+
+  stages {
+    stage('Build & Push ( on tag )') {
+      when {
+        buildingTag()
+      }
+      steps{
+        node(label: 'docker-host') {
+          script {
+            checkout scm
+            if (env.BRANCH_NAME == 'master') {
+              tagName = 'latest'
+            } else {
+              tagName = "$BRANCH_NAME"
             }
-          } finally {
-            sh "docker rmi $registry:$tagName"
+            try {
+              dockerImage = docker.build("$registry:$tagName", "--no-cache .")
+              docker.withRegistry( '', 'eeajenkins' ) {
+                dockerImage.push()
+              }
+            } finally {
+              sh "docker rmi $registry:$tagName"
+            }
           }
         }
       }
     }
-  }
 
-  stages {
     stage('Release') {
       when {
         buildingTag()
