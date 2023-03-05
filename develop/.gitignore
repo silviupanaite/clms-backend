@@ -1,0 +1,14 @@
+sources/*
+bin/*
+var/*
+etc/*
+bin/*
+include/*
+parts/*
+lib*
+lib64*
+develop-eggs
+.installed.cfg
+.mr.developer.cfg
+constraints-mxdev.txt
+pyvenv.cfg
