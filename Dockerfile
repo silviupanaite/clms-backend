@@ -1,5 +1,5 @@
-FROM eeacms/plone:5.2.9-12
+FROM eeacms/plone-backend:6.0.1-1
 
-
-COPY site.cfg /plone/instance/
-RUN gosu plone buildout -c site.cfg
+COPY requirements.txt constraints.txt /app/
+RUN ./bin/pip install -r requirements.txt -c constraints.txt ${PIP_PARAMS} \
+    && find /app -not -user plone -exec chown plone:plone {} \+
