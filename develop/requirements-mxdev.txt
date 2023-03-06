@@ -1,0 +1,18 @@
+-f https://eggrepo.eea.europa.eu/simple/
+-f https://code.codesyntax.com/static/public/
+
+###############################################################################
+# mxdev combined constraints
+-c constraints-mxdev.txt
+
+
+###############################################################################
+# mxdev development sources
+-e ./sources/clms.addon --install-option="--pre"
+-e ./sources/clms.types --install-option="--pre"
+-e ./sources/clms.downloadtool --install-option="--pre"
+-e ./sources/clms.statstool --install-option="--pre"
+-e ./sources/eea.meeting --install-option="--pre"
+-e ./sources/ftw.tokenauth --install-option="--pre"
+-e ./sources/pas.plugins.oidc --install-option="--pre"
+
