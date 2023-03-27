@@ -97,3 +97,7 @@ tarjan==0.2.3.2
 # Required by:
 # clms.addon==8.0.dev0
 z3c.unconfigure==2.0
+
+# Required by:
+# clms.addon==8.4.dev0
+Products.mcdutils==4.0
