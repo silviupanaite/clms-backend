@@ -101,3 +101,7 @@ z3c.unconfigure==2.0
 # Required by:
 # clms.addon==8.4.dev0
 Products.mcdutils==4.0
+
+
+# Fix for https://github.com/plone/plone.app.contentrules/issues/77
+plone.app.contentrules==5.0.1+cs.1
