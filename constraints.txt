@@ -3,7 +3,7 @@
 clms.addon==8.4
 clms.downloadtool==4.5
 clms.statstool==2.6
-clms.types==10.7
+clms.types==10.8
 ftw.tokenauth==2.0+cs.7
 pas.plugins.oidc==1.0b3+cs.2
 eea.meeting==2.0a1+cs.18
@@ -101,3 +101,7 @@ z3c.unconfigure==2.0
 # Required by:
 # clms.addon==8.4.dev0
 Products.mcdutils==4.0
+
+
+# Fix for https://github.com/plone/plone.app.contentrules/issues/77
+plone.app.contentrules==5.0.1+cs.1
