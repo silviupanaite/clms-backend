@@ -6,6 +6,8 @@ pipeline {
     RANCHER_ENVID = "1a486860"
     IMAGE_NAME = "eeacms/clms-backend"
     GIT_NAME = "eea.docker.plone.clms"
+    registry = "eeacms/clms-backend"
+    template = "templates/clms-backend"
   }
 
   parameters {
