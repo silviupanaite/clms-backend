@@ -5,7 +5,7 @@ clms.downloadtool==5.9
 clms.statstool==2.6
 clms.types==12.9
 ftw.tokenauth==2.0+cs.9
-pas.plugins.oidc==1.0b4+cs.4
+pas.plugins.oidc==1.0b4+cs.5
 eea.meeting==2.0a1+cs.18
 pas.plugins.ldap==1.8.2
 XlsxWriter==3.0.8
