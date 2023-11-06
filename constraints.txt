@@ -1,9 +1,9 @@
 -f https://eggrepo.eea.europa.eu/simple/
 -f https://code.codesyntax.com/static/public/
-clms.addon==9.7
+clms.addon==9.8
 clms.downloadtool==6.2
 clms.statstool==2.9
-clms.types==13.9
+clms.types==14.0
 ftw.tokenauth==2.0+cs.9
 pas.plugins.oidc==1.0b4+cs.9
 eea.meeting==2.0a1+cs.18
@@ -23,7 +23,7 @@ pyasn1==0.4.8
 pyasn1-modules==0.2.8
 repoze.catalog==0.9.0
 zope.index==5.2.1
-zope.mkzeoinstance==5.0
+
 
 # Required by:
 # eea.meeting==2.0a1+cs.17.dev0
@@ -103,6 +103,3 @@ z3c.unconfigure==2.0
 # clms.addon==8.4.dev0
 Products.mcdutils==4.1
 
-
-# Fix for https://github.com/plone/plone.app.contentrules/issues/77
-plone.app.contentrules==5.0.1+cs.1
