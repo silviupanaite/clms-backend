@@ -1,9 +1,9 @@
 -f https://eggrepo.eea.europa.eu/simple/
 -f https://code.codesyntax.com/static/public/
 clms.addon==9.8
-clms.downloadtool==6.2
+clms.downloadtool==6.3
 clms.statstool==2.9
-clms.types==14.0
+clms.types==14.1
 ftw.tokenauth==2.0+cs.9
 pas.plugins.oidc==1.0b4+cs.9
 eea.meeting==2.0a1+cs.18
@@ -103,3 +103,4 @@ z3c.unconfigure==2.0
 # clms.addon==8.4.dev0
 Products.mcdutils==4.1
 
+pyproj==3.6.1 
