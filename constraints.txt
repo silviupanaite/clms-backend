@@ -2,8 +2,8 @@
 -f https://code.codesyntax.com/static/public/
 clms.addon==9.9
 clms.downloadtool==6.4
-clms.statstool==3.0
-clms.types==14.2
+clms.statstool==3.1
+clms.types==14.3
 ftw.tokenauth==2.0+cs.9
 pas.plugins.oidc==1.0b4+cs.9
 eea.meeting==2.0a1+cs.18
