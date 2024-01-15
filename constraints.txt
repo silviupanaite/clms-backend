@@ -3,7 +3,7 @@
 clms.addon==10.2
 clms.downloadtool==6.8
 clms.statstool==3.5
-clms.types==14.5
+clms.types==14.6
 ftw.tokenauth==2.0+cs.9
 pas.plugins.oidc==1.0b4+cs.9
 eea.meeting==2.0a1+cs.18
