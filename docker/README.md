@@ -37,3 +37,12 @@ In the container, in the `/app` folder, then you can start the Plone server:
 ```bash
 ./docker-entrypoint.sh start
 ```
+
+You can copy your database backup to the `./data` folder
+
+To create a Zope user, you can run (inside the container):
+
+```bash
+./docker-entrypoint.sh start
+./bin/addzopeuser myuser mypassword
+```
