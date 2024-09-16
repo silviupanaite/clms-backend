@@ -1,7 +1,20 @@
 pip==23.0.1
 setuptools==67.6.1
 wheel==0.40.0
-zc.buildout==3.0.1
+clms.addon
+clms.downloadtool
+clms.statstool
+clms.types
+collective.folderishtypes
+collective.volto.cookieconsent
+collective.volto.dropdownmenu
+collective.volto.formsupport[norobots]
+eea.meeting
+ftw.tokenauth
+pas.plugins.oidc
+pas.plugins.ldap
+eea.volto.policy
+
 
 # Windows specific down here (has to be installed here, fails in buildout)
 # Dependency of zope.sendmail:
