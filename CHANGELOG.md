@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [6.0.13-3](https://github.com/eea/clms-backend/releases/tag/6.0.13-3) - 2025-03-07T00:22:20Z
+
+### Dependency updates
+
+##### [clms.addon](https://github.com/eea/clms.addon/releases): 12.7 ~ 12.8
+
+* Change: Refs #278140 - CMS Content Export
+  [GhitaB]
+
+
 ## [6.0.13-2](https://github.com/eea/clms-backend/releases/tag/6.0.13-2) - 2025-03-03T16:11:59Z
 
 
