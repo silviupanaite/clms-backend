@@ -3,7 +3,7 @@
 clms.addon==13.1
 clms.downloadtool==9.8
 clms.statstool==3.7
-clms.types==17.6
+clms.types==17.7
 
 eea.volto.policy==7.0
 eea.meeting==2.0a1+cs.18
