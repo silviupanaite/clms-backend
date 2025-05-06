@@ -1,6 +1,12 @@
 # Changelog
 
 
+## [6.0.15-10](https://github.com/eea/clms-backend/releases/tag/6.0.15-10) - 2025-05-06T23:16:51Z
+
+### Internal
+
+- chore: [JENKINS] add ask url for webscore/sonarqube - [valentinab25 -  [`d0cbd8f`](https://github.com/eea/clms-backend/commit/d0cbd8f9fc5d96dd2201450274779932313c6594)]
+
 ## [6.0.15-9](https://github.com/eea/clms-backend/releases/tag/6.0.15-9) - 2025-04-30T23:55:50Z
 
 ### Plone
