@@ -1,6 +1,22 @@
 # Changelog
 
 
+## [6.0.15-12](https://github.com/eea/clms-backend/releases/tag/6.0.15-12) - 2025-05-21T13:59:17Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.15-7 ~ 6.0.15-8 
+
+##### eeacms/plone-backend:[6.0.15-8](https://github.com/eea/plone-backend/releases/tag/6.0.15-8)
+###### Dependency updates
+
+###### [collective.regenv](https://pypi.org/project/collective.regenv/#changelog): 1.0.0 ~ 1.0.1dev2
+
+###### Internal
+
+- Release collective.regenv 1.0.1dev2 - [Alin Voinea - [`32572dd`](https://github.com/eea/plone-backend/commit/32572dd4a4f259dcbefc0159f73ddc19232fd755)]
+
+
 ## [6.0.15-10](https://github.com/eea/clms-backend/releases/tag/6.0.15-10) - 2025-05-06T23:16:51Z
 
 ### Internal
